@@ -1,0 +1,4 @@
+- [x] Install Three.js, GSAP, and TypeScript types for Three.js
+- [x] Create Ballpit component file (src/components/Ballpit.tsx)
+- [x] Update App.tsx to use Ballpit instead of PixelBlast
+- [x] Run npm install and start dev server to test
