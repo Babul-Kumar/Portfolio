@@ -7,11 +7,20 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
 
+// Component inspired by Kevin Levron:
+// https://x.com/soju22/status/1858925191671271801
+
 function App() {
   return (
     <div className="min-h-screen bg-black text-white relative overflow-x-hidden">
-      <div className="fixed inset-0 z-0">
-        <Ballpit />
+      <div style={{position: 'relative', overflow: 'hidden', minHeight: '500px', maxHeight: '500px', width: '100%'}}>
+        <Ballpit
+          count={200}
+          gravity={0.7}
+          friction={0.8}
+          wallBounce={0.95}
+          followCursor={true}
+        />
       </div>
 
       <div className="relative z-10">
